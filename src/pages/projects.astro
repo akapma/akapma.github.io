@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Research Publications</div>
+  </div>
+
+  <HorizontalCard
+    title="MiSeRTrace - Kernel-level Request Tracing for Microservice Visibility"
+    subtitle="PES University"
+    img="/MiSeRTrace.png"
+    desc="Developed MiSeRTrace (MicroService Request Trace), a tool for tracing the end-to-end path of requests within a microservice application at the Linux kernel level, without requiring instrumentation of the application code."
+    url="https://dl.acm.org/doi/10.1145/3491204.3527462"
+    publication="Workshop on Hot Topics in Cloud Computing Performance (HotCloudPerf) in companion of the ACM/SPEC International Conference on Performance Engineering (ICPE) 2022"
+    timeline="[Jan 2021] to [May 2021]"
+    badge="FOSS"
+  />
+  <div class="divider my-0"></div>
+  <!-- <HorizontalCard
+    title="Demo Project 2"
+    img="/post_img.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+  /> -->
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Research Projects</div>
+  </div>
+  <HorizontalCard
+    title="Workload Trace Extrapolation for Future High Core-Count Processor Designs"
+    subtitle="Advanced Micro Devices (AMD)"
+    img="/AMD.png"
+    desc="Designed an innovative method to synthetically extrapolate performance for high-thread count, data-sharing intensive applications from existing low-thread count instruction traces. This approach allowed for the reuse of existing traces, significantly reducing months of retracing and validation efforts."
+    publication="AMD Asia Technical Conference (AATC) 2024"
+    timeline="[September 2023] to [June 2024]"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Faster, Better Workload Sampling for Architecture Simulations"
+    subtitle="Advanced Micro Devices (AMD)"
+    img="/AMD.png"
+    desc="Designed a new approach to perform targeted sampling of workloads for instruction traces in a microarchitecture independent fashion. This method delivers improved accuracy in performance projection with 5 to 10x reduction in storage, computational requirements and engineering efforts over the legacy approach."
+    publication="AMD's Global Technical Author's Conference (GTAC) 2023"
+    timeline="[June 2022] to [March 2023]"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+</BaseLayout>
