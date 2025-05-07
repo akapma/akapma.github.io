@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://akoustic.github.io',
+  site: 'https://akapma.github.io',
   // base: 'portfolio',
   output: 'static',
   integrations: [mdx(), sitemap(), tailwind()]
